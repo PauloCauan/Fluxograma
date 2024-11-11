@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contador - Ferramenta de Gestão Financeira</h1>
+  </header>
+  <main class="container">
+    <section>
+      <h2>Cadastrar Cliente</h2>
+      <form id="accountantForm">
+        <input type="text" id="clientName" placeholder="Nome do Cliente" required>
+        <input type="text" id="financialDetails" placeholder="Detalhes Financeiros" required>
+        <button type="button" onclick="saveAccountantData()">Salvar Cliente</button>
+      </form>
+    </section>
+    <section>
+      <h2>Clientes Cadastrados</h2>
+      <ul id="clientList"></ul>
+    </section>
+    <button onclick="window.location.href='visualizacao.html?profissao=contador'">Visualizar Clientes Cadastrados</button>
+  </main>
+  <script src="scripts/contador.js"></script>
+</body>
+</html>

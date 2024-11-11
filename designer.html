@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designer Gráfico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Designer Gráfico - Ferramenta de Gestão de Projetos</h1>
+  </header>
+  <main class="container">
+    <section>
+      <h2>Cadastrar Projeto</h2>
+      <form id="designerForm">
+        <input type="text" id="projectName" placeholder="Nome do Projeto" required>
+        <input type="text" id="clientName" placeholder="Nome do Cliente" required>
+        <textarea id="projectDetails" placeholder="Detalhes do Projeto" required></textarea>
+        <button type="button" onclick="saveDesignerData()">Salvar Projeto</button>
+      </form>
+    </section>
+    <section>
+      <h2>Projetos Cadastrados</h2>
+      <ul id="projectList"></ul>
+    </section>
+    <button onclick="window.location.href='visualizacao.html?profissao=designer'">Visualizar Projetos Cadastrados</button>
+  </main>
+  <script src="scripts/designer.js"></script>
+</body>
+</html>
